@@ -1,0 +1,119 @@
+{
+  "virpil": {
+    "exe": "VPC_LED_Control.exe",
+    "vid": "3344",
+    "pid": "025A"
+  },
+  "bms": {
+    "tag": "FalconSharedMemoryArea",
+    "mmap_size": 132,
+    "startup_delay_sec": 12.0,
+    "reopen_retry_sec": 1.0,
+    "poll_hz": 10,
+    "lightBits_off": 108,
+    "lightBits2_off": 124,
+    "lightBits3_off": 128
+  },
+  "failsafe": {
+    "off_on_exit": true,
+    "off_when_bms_missing": true
+  },
+  "mappings": [
+    {
+      "name": "Master Caution",
+      "word": "lb",
+      "mask": "0x1",
+      "cmd": 6,
+      "on": [
+        "FF",
+        "80",
+        "00"
+      ],
+      "off": [
+        "00",
+        "00",
+        "00"
+      ]
+    },
+    {
+      "name": "SpeedBrake",
+      "word": "lb3",
+      "mask": "0x800000",
+      "cmd": 9,
+      "on": [
+        "FF",
+        "80",
+        "00"
+      ],
+      "off": [
+        "00",
+        "00",
+        "00"
+      ]
+    },
+    {
+      "name": "GearHandle",
+      "word": "lb2",
+      "mask": "0x40000000",
+      "cmd": 10,
+      "on": [
+        "FF",
+        "00",
+        "00"
+      ],
+      "off": [
+        "00",
+        "00",
+        "00"
+      ]
+    },
+    {
+      "name": "LeftGearDown",
+      "word": "lb3",
+      "mask": "0x20000",
+      "cmd": 12,
+      "on": [
+        "00",
+        "FF",
+        "00"
+      ],
+      "off": [
+        "00",
+        "00",
+        "00"
+      ]
+    },
+    {
+      "name": "NoseGearDown",
+      "word": "lb3",
+      "mask": "0x10000",
+      "cmd": 13,
+      "on": [
+        "00",
+        "FF",
+        "00"
+      ],
+      "off": [
+        "00",
+        "00",
+        "00"
+      ]
+    },
+    {
+      "name": "RightGearDown",
+      "word": "lb3",
+      "mask": "0x40000",
+      "cmd": 14,
+      "on": [
+        "00",
+        "FF",
+        "00"
+      ],
+      "off": [
+        "00",
+        "00",
+        "00"
+      ]
+    }
+  ]
+}
