@@ -2,11 +2,11 @@
 Control VPC LEDs using this Joystick Gremlin script collection.
 
 Files:
-bms_virpil_leds_autostart_jg13x.py - python plugin entry point for Joystick Gremlin (configured and tested for v13.3)
-virpil_bms_leds.json - configurable device information and flightdata.h -> LED mappings.
-virpil_led_helper.exe - compiled python, communicates between BMS shared memory area and VPC_LED_Control.exe
-virpil_led_helper.py - source
-VPC_LED_Control.exe - Supplied by Virpil, uses VID/HID/mappings from .json, talks to HID device.
+- `bms_virpil_leds_autostart_jg13x.py` - python plugin entry point for Joystick Gremlin (configured and tested for v13.3)
+- `virpil_bms_leds.json` - configurable device information and flightdata.h -> LED mappings.
+- `virpil_led_helper.exe` - compiled python, communicates between BMS shared memory area and VPC_LED_Control.exe
+- `virpil_led_helper.py` - source
+- `VPC_LED_Control.exe` - Supplied by Virpil, uses VID/HID/mappings from .json, talks to HID device.
 
 Instructions (this is all you get!):
 - I recommend placing the entire extracted virpil-led-helper folder in ```Users\[username]\joystick gremlin``` folder, if it exists, or other suitable default.
