@@ -27,7 +27,7 @@ In the JSON file:
   "mappings": [
     {
       "name" - whatever you want
-      "word" - Word containing desired bit - in this case "LightBits"
+      "word" - Word containing desired bit: "lb","lb2", or "lb3" (LightBits, LightBits2, LightBits3)
       "mask" - Bit Mask
       "cmd" - Command sent to the VPC device. Sorry, you'll probably have to get these by trial and error.
       "on" - Color when bit is active
